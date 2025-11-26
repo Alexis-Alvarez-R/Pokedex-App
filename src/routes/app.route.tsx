@@ -1,8 +1,8 @@
 import { HomePage } from "../pages/HomePage";
 import { PokedexLayout } from "../layouts/PokedexLayout";
-import { createBrowserRouter } from "react-router";
+import { createHashRouter } from "react-router";
 
-export const appRouter = createBrowserRouter([
+export const appRouter = createHashRouter([
   {
     path: "/",
     element: <PokedexLayout />,
