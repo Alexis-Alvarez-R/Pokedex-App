@@ -3,7 +3,7 @@ import { PokemonTypes } from "../data/pokemonTypes";
 import { SearchControll } from "./SearchControll";
 
 export const FilterControlls = () => {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [, setSearchParams] = useSearchParams();
 
   return (
     <nav className="w-full p-2.5 flex flex-col justify-center items-center">
