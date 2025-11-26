@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import { useSearchParams } from "react-router";
 
+import logoSearch from "../assets/search.svg";
+
 export const SearchControll = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
@@ -40,7 +42,7 @@ export const SearchControll = () => {
         className="flex justify-center items-center bg-[#393939] p-3 aspect-square rounded-2xl cursor-pointer hover:brightness-120 active:scale-90 transition-all "
         onClick={handleClick}
       >
-        <img className="w-5 h-5 object-contain" src="../../public/assets/search.svg" alt="icon-search" />
+        <img className="w-5 h-5 object-contain" src={logoSearch} alt="icon-search" />
       </button>
     </div>
   );
